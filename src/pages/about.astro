@@ -5,38 +5,94 @@ const meta = {
 	description: "Sobre Felipe Gusmão — Data Analyst",
 	title: "Sobre",
 };
+
+const skills = [
+	{
+		category: "Análise de Dados",
+		items: ["Análise Exploratória (EDA)", "Estatística Descritiva", "Limpeza e Transformação de Dados", "Visualização de Dados"],
+	},
+	{
+		category: "Programação",
+		items: ["Python", "pandas", "numpy", "matplotlib", "seaborn", "SQL"],
+	},
+	{
+		category: "Ferramentas",
+		items: ["Jupyter Notebook", "Power BI", "Git & GitHub", "Figma", "VS Code"],
+	},
+];
 ---
 
 <PageLayout meta={meta}>
 	<h1 class="title mb-12">Sobre mim</h1>
-	<div class="prose prose-sm prose-cactus max-w-none">
-		<p>
-			Oi! Sou o Felipe Gusmão, Data Analyst com foco em transformar dados em
-			insights acionáveis. Trabalho com análise exploratória, visualização de dados e
-			automação de relatórios.
-		</p>
-		<p>Algumas ferramentas e tecnologias que uso no dia a dia:</p>
-		<ul class="list-inside list-disc" role="list">
-			<li>Python (pandas, numpy, matplotlib, seaborn)</li>
-			<li>SQL e bancos de dados relacionais</li>
-			<li>Jupyter Notebooks</li>
-			<li>Power BI / dashboards interativos</li>
-			<li>Git e GitHub</li>
-		</ul>
-		<p>
-			Quer saber mais ou entrar em contato? Me encontra no{" "}
-			<a
-				class="cactus-link inline-block"
-				href="https://www.linkedin.com/in/felipe-gusm%C3%A3o-a8205019a/"
-				rel="noreferrer"
-				target="_blank">LinkedIn</a
-			> ou no{" "}
-			<a
-				class="cactus-link inline-block"
-				href="https://github.com/felipeocgusmao"
-				rel="noreferrer"
-				target="_blank">GitHub</a
-			>.
-		</p>
+
+	<div class="flex flex-col gap-12">
+		<!-- Foto + Bio -->
+		<div class="flex flex-col items-center gap-8 sm:flex-row sm:items-start">
+			<img
+				alt="Felipe Gusmão"
+				class="h-36 w-36 flex-shrink-0 rounded-full object-cover ring-2 ring-offset-2"
+				src="https://github.com/felipeocgusmao.png"
+			/>
+			<div class="prose prose-sm prose-cactus max-w-none">
+				<p>
+					Oi! Sou o <strong>Felipe Gusmão</strong>, Data Analyst com foco em transformar
+					dados brutos em insights que apoiam decisões. Tenho experiência com análise
+					exploratória, visualização de dados e construção de dashboards interativos.
+				</p>
+				<p>
+					Comecei minha jornada em dados pela Rocketseat e desde então venho desenvolvendo
+					projetos práticos com datasets reais — de sistemas financeiros a análises de
+					mercado imobiliário.
+				</p>
+				<p>
+					Atualmente focado em aprofundar minha prática com Python, SQL e storytelling
+					com dados.
+				</p>
+			</div>
+		</div>
+
+		<!-- Habilidades -->
+		<div>
+			<h2 class="title mb-6 text-xl">Habilidades</h2>
+			<div class="grid gap-6 sm:grid-cols-3">
+				{
+					skills.map(({ category, items }) => (
+						<div>
+							<h3 class="mb-3 font-semibold">{category}</h3>
+							<ul class="space-y-1">
+								{items.map((item) => (
+									<li class="text-muted-foreground flex items-center gap-2 text-sm">
+										<span class="text-accent">▸</span>
+										{item}
+									</li>
+								))}
+							</ul>
+						</div>
+					))
+				}
+			</div>
+		</div>
+
+		<!-- Contato -->
+		<div class="prose prose-sm prose-cactus max-w-none">
+			<p>
+				Quer trocar ideia ou tem uma oportunidade? Me encontra no{" "}
+				<a
+					class="cactus-link inline-block"
+					href="https://www.linkedin.com/in/felipe-gusm%C3%A3o-a8205019a/"
+					rel="noreferrer"
+					target="_blank">LinkedIn</a
+				>, veja meus projetos no{" "}
+				<a
+					class="cactus-link inline-block"
+					href="https://github.com/felipeocgusmao"
+					rel="noreferrer"
+					target="_blank">GitHub</a
+				> ou me manda um e-mail em{" "}
+				<a class="cactus-link inline-block" href="mailto:felipeocgusmao@gmail.com">
+					felipeocgusmao@gmail.com
+				</a>.
+			</p>
+		</div>
 	</div>
 </PageLayout>
