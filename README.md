@@ -118,11 +118,6 @@ Queries avançadas para análise de e-commerce: crescimento MoM com `LAG`, ranki
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=felipeocgusmao&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=felipeocgusmao&layout=compact&langs_count=7&theme=tokyonight&hide_border=true"/>
-</div>
-
-<div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=felipeocgusmao&theme=tokyo-night&hide_border=true&area=true" width="100%"/>
 </div>
 
