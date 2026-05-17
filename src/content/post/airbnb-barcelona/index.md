@@ -70,6 +70,4 @@ Esse projeto consolidou minha prática com o ciclo completo de uma EDA:
 
 ## Código
 
-Repositório completo disponível no GitHub:
-
-[github.com/felipeocgusmao/projeto_1](https://github.com/felipeocgusmao/projeto_1)
+::github{repo="felipeocgusmao/projeto_1"}
