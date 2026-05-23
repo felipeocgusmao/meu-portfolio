@@ -68,7 +68,7 @@ Sistema completo de controle financeiro com análise em Jupyter e interface web 
 </td>
 </tr>
 <tr>
-<td colspan="2" valign="top">
+<td width="50%" valign="top">
 
 ### 🛒 Análise de Vendas com SQL
 Queries avançadas para análise de e-commerce: crescimento MoM com `LAG`, ranking de clientes com `RANK()`, identificação de churn e participação por categoria usando window functions e CTEs.
@@ -78,6 +78,19 @@ Queries avançadas para análise de e-commerce: crescimento MoM com `LAG`, ranki
 ![CTEs](https://img.shields.io/badge/CTEs-4479A1?style=flat-square)
 
 [**Ver post →**](https://felipegusmao.vercel.app/posts/sql-analise-vendas/)
+
+</td>
+<td width="50%" valign="top">
+
+### 🕐 PontoGlass
+Sistema full-stack de gestão de ponto digital — funcionários registram pelo celular, gestores acompanham em tempo real. Exportação PDF/CSV, PWA, JWT e suporte a 4 idiomas.
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+
+[**Ver post →**](https://felipegusmao.vercel.app/posts/ponto-glass/) · [**Repositório →**](https://github.com/felipeocgusmao/ponto-glass-next)
 
 </td>
 </tr>
@@ -103,6 +116,12 @@ Queries avançadas para análise de e-commerce: crescimento MoM com `LAG`, ranki
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
+**Web & Full-Stack**
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
 **Dados & Infra**
 
