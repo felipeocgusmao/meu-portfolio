@@ -72,4 +72,4 @@ Esse projeto foi um salto para o desenvolvimento full-stack com foco em produto 
 
 ## Código
 
-::github{repo="felipeocgusmao/ponto-glass-next"}
+::github{repo="felipeocgusmao/ponto-glass-demo"}
