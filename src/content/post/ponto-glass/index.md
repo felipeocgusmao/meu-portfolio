@@ -1,75 +1,92 @@
 ---
-title: "PontoGlass: Sistema de Controle de Ponto Digital"
-description: "Sistema full-stack de gestão de ponto digital com Next.js 14, Supabase e JWT — painel ao vivo, exportação PDF/CSV, PWA e suporte a 4 idiomas."
-publishDate: "23 May 2026"
+title: "Ponto Glass: Controle de Ponto via Smart Glasses"
+description: "Sistema de registo de jornada laboral para trabalhadores de campo via óculos inteligentes — conformidade com o Real Decreto-lei 8/2019 espanhol, Next.js 14 e Supabase."
+publishDate: "31 May 2026"
 tags: ["nextjs", "typescript", "supabase", "fullstack", "postgresql"]
 ---
 
-## Sobre o projeto
+## O problema real
 
-O **PontoGlass** nasceu de uma necessidade real: permitir que funcionários registrem entradas e saídas pelo celular, enquanto gestores acompanham tudo em tempo real — sem infraestrutura local, sem complicação.
+Em Espanha, o **Real Decreto-lei 8/2019** obriga todas as empresas a registar digitalmente a jornada de trabalho de cada funcionário. O não cumprimento resulta em multas significativas.
 
-É um sistema full-stack completo, com três níveis de acesso (funcionário, gestor e administrador), construído com Next.js 14 e Supabase.
+O problema: trabalhadores de campo — em obras de construção civil, limpeza, logística e segurança — frequentemente não têm acesso fácil a um smartphone durante o trabalho. Pedir a um pedreiro que tire as luvas, desbloqueie o telemóvel e registe o ponto num app é um atrito enorme.
+
+**Ponto Glass resolve isso de forma hands-free, via óculos inteligentes (smart glasses).**
+
+## A solução
+
+O trabalhador faz check-in e check-out através de óculos Android — sem tocar no telemóvel, sem interromper o trabalho. A interface foi desenhada especificamente para ecrãs pequenos e uso em campo.
+
+Do outro lado, gestores e administradores acompanham tudo em tempo real num dashboard web.
+
+## Público-alvo
+
+- Empresas de construção civil com equipas em campo
+- Empresas de limpeza, logística e segurança privada
+- Qualquer setor com trabalhadores em ambientes hostis ou hands-free
+- PMEs espanholas que precisam cumprir a lei de registo de jornada
 
 ## O que foi construído
 
-### Para funcionários
+### Perfil: Trabalhador de Campo
 
-- Relógio ao vivo com status em tempo real (dentro / pausa / fora)
-- Registro de entrada, saída e pausas (almoço, café)
-- Visualização de ganhos diários calculados automaticamente
-- Histórico mensal com visualização em calendário
-- Solicitações de correção de registros
+- Check-in e check-out via smart glasses (interface otimizada para ecrã pequeno)
+- Visualização do histórico de registos pessoais
+- Notificação de horas em falta ou esquecimento de saída
 
-### Para gestores
+### Perfil: Gerente / Encarregado
 
-- Painel de status ao vivo de toda a equipe
-- Histórico detalhado por funcionário
-- Relatórios com exportação em **CSV e PDF** (jsPDF + AutoTable)
-- Gestão de banco de horas
+- Dashboard com presença da equipa em tempo real
+- Alertas de trabalhadores sem check-in dentro do horário esperado
+- Relatórios de horas por trabalhador e por projeto
 
-### Para administradores
+### Perfil: Administrador da Empresa
 
-- CRUD completo de funcionários
-- Configuração de jornadas, horários e valores por hora
-- **Audit log** de todas as ações do sistema
-- Modo quiosque para tablet compartilhado
-- Gestão de feriados e ausências
+- Gestão completa de utilizadores e permissões
+- Configuração de horários e projetos
+- Exportação de relatórios para conformidade legal
+- Auditoria completa de todos os registos
 
 ## Stack técnica
 
-| Camada | Tecnologia |
+| Categoria | Tecnologia | Função |
+|---|---|---|
+| Frontend | Next.js 14 (React) | Interface web principal |
+| Estilização | Tailwind CSS | Design system responsivo |
+| Backend/BaaS | Supabase | PostgreSQL + Auth + RLS |
+| Autenticação | Supabase Auth | Login seguro por empresa/perfil |
+| Hardware | Smart Glasses (Android) | Dispositivo de input dos trabalhadores |
+| Deploy | Vercel | Hospedagem e CI/CD automático |
+
+## Segurança e conformidade RGPD
+
+O sistema trata dados pessoais de trabalhadores, por isso a segurança foi prioridade desde o início:
+
+| Camada | Implementação |
 |---|---|
-| Frontend | Next.js 14 (App Router) + TypeScript strict |
-| Banco de dados | Supabase (PostgreSQL gerenciado) |
-| Autenticação | JWT em httpOnly cookies + bcryptjs |
-| Notificações | Web Push API com VAPID |
-| Documentos | jsPDF + AutoTable |
-| Email | Nodemailer |
-| Deploy | Vercel com Cron Jobs |
+| Isolamento de dados | Row Level Security (RLS) no Supabase/PostgreSQL |
+| Autenticação | Tokens JWT via Supabase Auth |
+| Controlo de acessos | Permissões por perfil (worker / manager / admin) |
+| Comunicação cifrada | HTTPS em toda a aplicação (Vercel + Supabase) |
+| Auditoria | Logs imutáveis de todos os registos de ponto |
+| Conformidade RGPD | Dados em infraestrutura europeia |
 
-## Funcionalidades de destaque
+## Demo ao vivo
 
-**PWA nativa** — instalável no celular como app, com notificações push nativas.
+A aplicação está deployada e acessível publicamente como prova de conceito:
 
-**Multilíngue** — suporte completo a PT-PT, PT-BR, EN e ES com internacionalização.
+**[ponto-glass-next.vercel.app](https://ponto-glass-next.vercel.app)**
 
-**Turno noturno** — ajuste automático de data para turnos que cruzam a meia-noite.
-
-**Geolocalização** — configurável por funcionário para validar o local do registro.
-
-**Design system próprio** — construído com CSS Variables sem depender de frameworks de UI.
+Permite testar o fluxo completo de registo de ponto, dashboard e gestão de utilizadores — preparada para ser mostrada a potenciais clientes sem necessidade de instalação.
 
 ## O que aprendi
 
-Esse projeto foi um salto para o desenvolvimento full-stack com foco em produto real:
-
-- Modelagem de banco de dados relacional para múltiplos perfis de acesso
-- Autenticação segura com JWT em cookies httpOnly (sem localStorage)
+- Modelagem de banco de dados relacional com múltiplos perfis de acesso e RLS
 - Arquitetura de App Router no Next.js 14 com Server e Client Components
-- Geração de documentos PDF diretamente no servidor
-- Deploy de aplicações com Cron Jobs no Vercel
+- Desenvolvimento de interfaces para hardware não-convencional (smart glasses)
+- Conformidade legal como requisito de produto, não como afterthought
+- Estratégia de repositórios: código privado + demo pública como cartão de visita
 
-## Código
+## Repositório público
 
 ::github{repo="felipeocgusmao/ponto-glass-demo"}
