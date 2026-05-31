@@ -82,8 +82,8 @@ Queries avançadas para análise de e-commerce: crescimento MoM com `LAG`, ranki
 </td>
 <td width="50%" valign="top">
 
-### 🕐 PontoGlass
-Sistema full-stack de gestão de ponto digital — funcionários registram pelo celular, gestores acompanham em tempo real. Exportação PDF/CSV, PWA, JWT e suporte a 4 idiomas.
+### 🥽 Ponto Glass
+Registo de ponto **hands-free via smart glasses** para trabalhadores de campo. Conformidade com o Real Decreto-lei 8/2019 espanhol. Dashboard em tempo real para gestores e auditoria completa para administradores.
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
