@@ -3,6 +3,7 @@ title: "Análise Exploratória: Airbnb em Barcelona"
 description: "Análise de 300 acomodações do Airbnb em Barcelona para identificar padrões de preço, distribuição por bairros e correlação entre avaliações e valor da diária."
 publishDate: "14 May 2026"
 tags: ["python", "data-analysis", "pandas", "matplotlib", "jupyter", "eda"]
+pinned: true
 ---
 
 ## Sobre o projeto

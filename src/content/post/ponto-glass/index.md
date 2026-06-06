@@ -3,6 +3,7 @@ title: "Ponto Glass: Controle de Ponto via Smart Glasses"
 description: "Sistema de registo de jornada laboral para trabalhadores de campo via óculos inteligentes — conformidade com o Real Decreto-lei 8/2019 espanhol, Next.js 14, Supabase e app nativo iOS/Android com Capacitor."
 publishDate: "06 Jun 2026"
 tags: ["nextjs", "typescript", "supabase", "fullstack", "postgresql", "pwa", "capacitor", "testing"]
+pinned: true
 ---
 
 ## O problema real
