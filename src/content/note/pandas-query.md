@@ -1,23 +1,23 @@
 ---
-title: "pandas .query() deixa filtros muito mais legíveis"
+title: "pandas .query() para filtros mais expressivos em DataFrames"
 publishDate: "2026-05-28T11:00:00+02:00"
 ---
 
-Troquei o filtro boilerplate por `.query()` e o notebook ficou bem mais fácil de ler:
+A sintaxe de filtragem booleana padrão do pandas funciona, mas se torna verbosa rapidamente com múltiplas condições. O método `.query()` oferece uma alternativa mais expressiva:
 
 ```python
-# antes
+# filtragem booleana padrão
 df[(df["status"] == "completed") & (df["total"] > 100)]
 
-# depois
+# com .query()
 df.query("status == 'completed' and total > 100")
 ```
 
-Funciona com variáveis do escopo usando `@`:
+Para referenciar variáveis do escopo externo, use o prefixo `@`:
 
 ```python
-limite = 100
-df.query("total > @limite")
+threshold = 100
+df.query("total > @threshold")
 ```
 
-Ainda prefiro o modo explícito quando o filtro envolve índices ou métodos, mas para condições simples `.query()` ganha fácil em legibilidade.
+`.query()` é especialmente vantajoso em notebooks, onde a legibilidade do código tem peso tão grande quanto o resultado em si. Para filtragens que envolvem índices, operações vetorizadas ou chamadas de método, a sintaxe booleana padrão ainda é a escolha mais adequada.

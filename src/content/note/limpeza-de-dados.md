@@ -1,12 +1,12 @@
 ---
-title: "80% do tempo em dados é limpeza — e tá certo"
+title: "80% do tempo em dados é limpeza — e está certo"
 publishDate: "2026-05-20T14:00:00+02:00"
 ---
 
-Sempre ouço isso como reclamação. Mas fui mudando de perspetiva.
+Limpeza de dados frequentemente é tratada como overhead — a parte operacional antes da "análise de verdade". Na prática, é exatamente o contrário.
 
-Limpeza de dados **é** a análise. É o momento em que você entende o que os dados realmente dizem, onde estão os buracos, o que foi mal registado. Quem pula essa etapa chega a conclusões erradas com gráficos bonitos.
+A etapa de limpeza **é** a análise. É o momento em que se entende o que os dados representam de fato: onde estão as lacunas, quais campos foram mal registrados, quais valores fogem do padrão esperado. Pular essa etapa é chegar a conclusões incorretas apresentadas com gráficos bem elaborados.
 
-O Airbnb Barcelona foi um bom exemplo disso: os preços tinham outliers absurdos (€1 e €9.999 na mesma coluna) que só apareceram na hora de plotar. Se eu tivesse calculado a média direto, o resultado não diria nada sobre o mercado real.
+Na análise do Airbnb em Barcelona, os preços incluíam outliers extremos — listagens com €1 e €9.999 na mesma coluna. Se a média tivesse sido calculada diretamente sobre os dados brutos, o resultado não teria nenhuma aderência ao mercado real.
 
-Dado sujo com análise rápida = insight errado. Dado limpo com análise simples = decisão certa.
+A regra prática: dado sujo com análise elaborada produz insight incorreto. Dado limpo com análise simples produz decisão correta.
