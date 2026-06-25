@@ -1,5 +1,5 @@
 ---
-title: "Lazy loading reduz o bundle inicial sem comprometer a experiência"
+title: "Lazy loading: ~500 KB a menos no bundle inicial"
 publishDate: "2026-06-17T14:00:00+02:00"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Window functions: cálculos analíticos sem perder o detalhe das linhas"
+title: "Window functions: analítica sem colapsar as linhas"
 publishDate: "2026-06-04T09:00:00+02:00"
 ---
 
