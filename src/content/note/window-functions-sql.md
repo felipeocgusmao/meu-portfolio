@@ -1,16 +1,22 @@
 ---
-title: "Window functions mudam tudo em SQL"
+title: "Window functions: cálculos analíticos sem perder o detalhe das linhas"
 publishDate: "2026-06-04T09:00:00+02:00"
 ---
 
-Se você ainda está resolvendo ranking com subqueries, vale descobrir as window functions.
+Window functions resolvem uma limitação central do `GROUP BY`: a perda do detalhe das linhas originais após a agregação.
 
-`RANK()`, `ROW_NUMBER()`, `LAG()`, `LEAD()` — todas rodam **sem colapsar as linhas** da query, ao contrário de `GROUP BY`. Você mantém o detalhe e ainda calcula o agregado na mesma linha.
+Com `RANK()`, `ROW_NUMBER()`, `LAG()` e `LEAD()`, os cálculos analíticos são executados **sobre o conjunto de linhas original** — sem colapsá-lo. É possível manter o nível de detalhe e acessar o valor calculado na mesma linha.
 
-O caso que me fez entender isso de vez: calcular o crescimento MoM de receita. Com `LAG()` é uma linha. Sem ela, seria uma CTE inteira só pra isso.
+Um exemplo concreto: calcular o crescimento mês a mês de receita. Com `LAG()`, é uma expressão na cláusula `SELECT`:
 
 ```sql
-LAG(receita) OVER (ORDER BY mes)
+receita - LAG(receita) OVER (ORDER BY mes) AS variacao_mom
 ```
 
-Simples assim.
+Sem window functions, o mesmo resultado exigiria uma CTE para materializar o mês anterior e um join posterior — mais código e mais pontos de falha.
+
+Casos de uso mais comuns:
+- Ranking de clientes ou produtos por métrica — `RANK`, `DENSE_RANK`
+- Numeração sequencial de registros por grupo — `ROW_NUMBER`
+- Comparação com período anterior ou seguinte — `LAG`, `LEAD`
+- Totais acumulados — `SUM ... OVER (ORDER BY ...)`

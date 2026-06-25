@@ -1,13 +1,19 @@
 ---
-title: "SQL ou Python? Depende de onde os dados estão"
+title: "SQL ou Python: critérios práticos para a escolha certa"
 publishDate: "2026-06-01T16:30:00+02:00"
 ---
 
-Regra prática que uso:
+A questão "SQL ou Python?" é recorrente, mas a resposta depende menos de preferência e mais do contexto do problema.
 
-- **SQL** quando os dados ainda estão no banco e a transformação pode ser feita lá mesmo. Mais rápido, o banco foi otimizado pra isso.
-- **Python** quando preciso de lógica que SQL não expressa bem — machine learning, manipulação de texto complexa, integração com APIs, visualizações elaboradas.
+**Prefira SQL quando:**
+- Os dados estão no banco e a transformação pode ser executada na própria fonte — joins, agregações e filtros em grande volume são otimizados pelo banco por padrão
+- O resultado precisa ser compartilhado com outras ferramentas que consomem diretamente do banco
 
-Na prática, uso os dois juntos: SQL busca e agrega, Python analisa e visualiza. O erro é tentar fazer tudo em um só quando o outro seria mais natural.
+**Prefira Python quando:**
+- A lógica exige expressividade que SQL não oferece nativamente — machine learning, manipulação de texto complexa, integração com APIs externas
+- O pipeline combina múltiplas fontes heterogêneas
+- A etapa final é uma visualização, relatório automatizado ou modelo preditivo
 
-O que me ajudou a entender isso foi parar de perguntar "qual é melhor" e começar a perguntar "qual resolve esse problema com menos atrito".
+Na prática, o fluxo mais eficiente é composto: SQL para extração e agregação na fonte, Python para análise, modelagem e visualização. Tentar fazer tudo em uma única ferramenta normalmente gera atrito desnecessário.
+
+O critério decisivo: qual das duas resolve esse problema específico com menor overhead?
