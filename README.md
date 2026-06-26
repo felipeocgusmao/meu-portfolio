@@ -1,8 +1,8 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Felipe%20Gusm%C3%A3o&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Data%20Analyst%20%C2%B7%20Python%20%C2%B7%20SQL%20%C2%B7%20Power%20BI&descAlignY=55&descAlign=50&descSize=18"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Felipe%20Gusm%C3%A3o&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Data%20%26%20Full-Stack%20%C2%B7%20Python%20%C2%B7%20SQL%20%C2%B7%20Next.js%20%C2%B7%20Supabase&descAlignY=55&descAlign=50&descSize=18"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=6AD3F7&center=true&vCenter=true&width=600&lines=Transformando+dados+em+decis%C3%B5es+%F0%9F%93%8A;Python+%7C+SQL+%7C+Power+BI+%7C+Streamlit;EDA+%7C+Machine+Learning+%7C+Dashboards;felipegusmao.vercel.app)](https://felipegusmao.vercel.app)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=6AD3F7&center=true&vCenter=true&width=600&lines=Dados+%2B+Full-Stack+%F0%9F%93%8A;Python+%7C+SQL+%7C+Next.js+%7C+Supabase;EDA+%7C+Dashboards+%7C+Aplica%C3%A7%C3%B5es+web+completas;felipegusmao.vercel.app)](https://felipegusmao.vercel.app)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=felipeocgusmao&color=6AD3F7&style=flat-square&label=Visitas+no+perfil)
 
@@ -21,17 +21,17 @@
 ## 👨‍💻 Sobre mim
 
 ```python
-analista = {
+dev = {
     "nome":       "Felipe Gusmão",
-    "foco":       "Transformar dados brutos em insights acionáveis",
-    "stack":      ["Python", "SQL", "Power BI", "Streamlit", "scikit-learn"],
-    "atualmente": "Aprofundando em ML e storytelling com dados",
+    "foco":       "Dados e aplicações full-stack com impacto real",
+    "stack":      ["Python", "SQL", "TypeScript", "Next.js", "Supabase", "PostgreSQL"],
+    "atualmente": "Arquitetura multi-tenant, RLS e performance em React",
     "formação":   "Trilha de dados @ Rocketseat",
     "contato":    "felipeocgusmao@gmail.com",
 }
 ```
 
-Apaixonado por encontrar o story escondido nos dados. Trabalho com análise exploratória, visualização e modelos preditivos — do dataset bruto ao insight final que move decisões.
+Trabalho na interseção entre análise de dados e engenharia de software — de pipelines de EDA com Python e SQL até sistemas full-stack completos com autenticação, banco relacional e deploy em produção.
 
 ---
 
@@ -83,14 +83,15 @@ Queries avançadas para análise de e-commerce: crescimento MoM com `LAG`, ranki
 <td width="50%" valign="top">
 
 ### 🥽 Ponto Glass
-Registo de ponto **hands-free via smart glasses** para trabalhadores de campo. Conformidade com o Real Decreto-lei 8/2019 espanhol. Dashboard em tempo real para gestores e auditoria completa para administradores.
+Registo de ponto **hands-free via smart glasses** para trabalhadores de campo. Conformidade com o Real Decreto-lei 8/2019 espanhol. Comandos de voz, fila offline com Background Sync, app nativo iOS/Android via Capacitor, dashboard em tempo real e 79 testes (Vitest + Playwright).
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white)
 
-[**Ver post →**](https://felipegusmao.vercel.app/posts/ponto-glass/) · [**Repositório →**](https://github.com/felipeocgusmao/ponto-glass-next)
+[**Ver post →**](https://felipegusmao.vercel.app/posts/ponto-glass/) · [**Demo →**](https://ponto-glass-next.vercel.app) · [**Repositório →**](https://github.com/felipeocgusmao/ponto-glass-demo)
 
 </td>
 </tr>
@@ -122,12 +123,20 @@ Registo de ponto **hands-free via smart glasses** para trabalhadores de campo. C
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white)
+
+**Testes**
+
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
 
 **Dados & Infra**
 
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 </div>
