@@ -53,7 +53,7 @@ import jupyter
 ## Estrutura do projeto
 
 ```
-projeto_1/
+eda-airbnb-barcelona/
 ├── data/          # Dataset original do Kaggle
 ├── notebooks/     # Análises em Jupyter
 ├── outputs/       # Gráficos e resultados exportados
@@ -71,4 +71,4 @@ Esse projeto consolidou minha prática com o ciclo completo de uma EDA:
 
 ## Código
 
-::github{repo="felipeocgusmao/projeto_1"}
+::github{repo="felipeocgusmao/eda-airbnb-barcelona"}

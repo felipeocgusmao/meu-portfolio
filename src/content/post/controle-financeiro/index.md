@@ -7,7 +7,7 @@ tags: ["python", "data-analysis", "jupyter", "html", "css"]
 
 ## Sobre o projeto
 
-Esse foi meu primeiro projeto prático desenvolvido durante a trilha da [Rocketseat](https://rocketseat.com.br/). O objetivo era criar um sistema de controle financeiro completo — com análise de dados em Python e uma interface visual interativa para acompanhar receitas, despesas e saldo.
+Meu primeiro projeto prático de análise de dados — um sistema de controle financeiro completo com análise em Python e uma interface visual interativa para acompanhar receitas, despesas e saldo.
 
 O projeto combina duas frentes: a análise feita em Jupyter Notebook e uma interface web para visualizar os dados de forma acessível.
 
@@ -58,9 +58,7 @@ Esse projeto foi importante para consolidar conceitos fundamentais que uso até 
 
 ## Código
 
-O projeto está disponível no GitHub:
-
-[github.com/felipeocgusmao/Projeto](https://github.com/felipeocgusmao/Projeto)
+::github{repo="felipeocgusmao/financial-control-analysis"}
 
 ---
 
