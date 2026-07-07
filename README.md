@@ -12,7 +12,6 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/felipe-gusm%C3%A3o-a8205019a/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/felipeocgusmao)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:felipeocgusmao@gmail.com)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/felipe_ogusmao)
 
 </div>
 
@@ -26,7 +25,7 @@ dev = {
     "foco":       "Dados e aplicações full-stack com impacto real",
     "stack":      ["Python", "SQL", "TypeScript", "Next.js", "Supabase", "PostgreSQL"],
     "atualmente": "Arquitetura multi-tenant, RLS e performance em React",
-    "formação":   "Trilha de dados @ Rocketseat",
+    "formação":   "Autodidata — Python, SQL, Power BI, Machine Learning",
     "contato":    "felipeocgusmao@gmail.com",
 }
 ```
@@ -50,7 +49,7 @@ Dashboard interativo com análise exploratória e modelo preditivo de preços co
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 
-[**Ver post →**](https://felipegusmao.vercel.app/posts/airbnb-barcelona/) · [**Repositório →**](https://github.com/felipeocgusmao/projeto_1)
+[**Ver post →**](https://felipegusmao.vercel.app/posts/airbnb-barcelona/) · [**Repositório →**](https://github.com/felipeocgusmao/eda-airbnb-barcelona)
 
 </td>
 <td width="50%" valign="top">
